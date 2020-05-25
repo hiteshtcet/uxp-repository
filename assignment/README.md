@@ -1,17 +1,60 @@
-# UXP-SYSTEMS ASSIGNMENT
+# LTI-Banking-Application
 
-To run the application please follow below commands:
+Technology stack used:
 
-1. To build the application: mvn clean install
-2. Run the application using: mvn spring-boot:run
+```
+Spring Boot
+Spring Data JPA
+Spring Security
+Hibernate
+MySQL
+REST
+HTML5.0
+CSS3.0
+JQUERY
+Bootstrap
+```
 
-# Application is accessed at : http://localhost:8080/assignment
+The project simulates banking system. It allows to register/login, deposit/withdraw money from accounts, add/edit recipients, transfer money between accounts and recipients and view transactions.
 
-You need to provide below login credentials to access the application: 
+There are two roles user and admin.
 
-Username: user
+## Things to run the application
 
-Password: user
+__Clone the repository__
 
-# User can add/update/get/delete the user information from a single page.
+```
+git clone https://github.com/hitesh0003/LTI 
+```
 
+__Go the folder__
+
+```
+LTI-Banking-Application
+```
+
+__Set Your MySQL username & password in application.properties__
+
+[application.properties](../../src/main/resources/application.properties)
+
+__Run the application__
+
+```
+mvn clean spring-boot:run
+```
+
+Access the application by clicking the URL "[http://localhost:8080](http://localhost:8080)"
+
+## Deployment Steps:
+###### Build application
+```
+mvn clean build
+```
+###### DB Setup
+ * Start [MySQL server!](https://dev.mysql.com/downloads/mysql/)
+ * Use [MySQLWorkbench!](https://www.mysql.com/products/workbench/)
+
+###### Run application
+```
+java -jar target/banking-0.0.1-SNAPSHOT.jar
+```
